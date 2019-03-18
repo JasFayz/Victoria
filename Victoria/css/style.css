@@ -254,3 +254,6 @@ header span {
     color: #71bf44;
     text-decoration: none;
 }
+.team .social a:hover{
+    background: #333333;
+}
