@@ -116,10 +116,64 @@ header span {
     color: #71bf44;
 }
 
-.about {
+.about__wrap {
     padding: 200px 0;
     background: url('../img/laptop.png') no-repeat 73% 35%;
+   
 }
 .about p {
     width: 555px;
+}
+.smith {
+    background: #ebebeb;
+    padding: 200px 0 80px;
+    position: relative;
+}
+.smith p {
+    width: 100%;
+    text-align: center;
+}
+.smith__top-img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.smith .carousel{
+    height: 200px;
+}
+.smith .rectangle {
+    content: '';
+    display: block;
+    width: 176px;
+    height: 56px;
+    background-color: #a7a37e;
+    border: 1px solid #666666;
+    border-radius: 12px;
+}
+.smith .carousel-indicators{
+    bottom: 70px;
+    /* background-color: #000; */
+    align-items: flex-end;
+}
+.smith .carousel-indicators li {
+    width: 100px;
+    margin: 0 32px;
+    background-color: #cccccc;
+}
+.smith .carousel-indicators li .active {
+    background-color: #666666;
+}
+.smith__staff {
+   text-align: center;
+   margin-top: 75px;;
+}
+.smith__staff  h5{
+    color: #222222;
+    font-size: 30px;
+
+}
+.smith__staff h6{
+    color: #666666;
+    font-size: 14px;
 }
