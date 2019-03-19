@@ -257,3 +257,74 @@ header span {
 .team .social a:hover{
     background: #333333;
 }
+.templ-skills {
+    padding: 150px 0;
+    background: #333333;
+}
+.templ-skills h1 {
+    color: #71bf44;
+    font-size: 36px;
+    font-weight: normal;
+}
+.templ-skills h1::after{
+    display: block;
+    content: '';
+    width: 100px;
+    line-height: 1;
+    height: 3px;
+    background: #71bf44;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.templ-skills p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: normal;
+}
+.template_item,
+.skill_item{
+    margin-top: 60px;
+}
+.template_icon {
+    display: block;
+    padding: 0 17px;
+    height: 120px;
+    background: #71bf44;
+    margin-right: 12px;
+    border-radius: 12px;
+}
+.template_icon i {
+    margin-top: 20px;
+    font-size: 36px;
+}
+.template_text h1 {
+    font-size: 25px;
+}
+.template_text h1::after{
+    margin: 20px 0;
+}
+.skill_item h1 {
+    font-size: 24px;
+}
+.skill_item h1::after{
+    margin: 20px 0;
+}
+.templ-skills .procent {
+    display: block;
+    width: 90px;
+    height: 36px;
+    border: 1px solid #71bf44;
+    margin-bottom: 15px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.templ-skills .procent p{
+    font-size: 48px;
+    margin: 0;
+    font-family: 'Yeseva One', cursive;
+    position: absolute;
+    transform: rotate(-10deg);
+    top: -20px;
+    color: #71bf44;
+}
