@@ -266,7 +266,7 @@ header span {
     font-size: 36px;
     font-weight: normal;
 }
-.templ-skills h1::after{
+ h1::after{
     display: block;
     content: '';
     width: 100px;
@@ -328,3 +328,79 @@ header span {
     top: -20px;
     color: #71bf44;
 }
+
+/* What We Do Block */
+.whatwedo {
+    padding: 150px 0;
+}
+.whatwedo h1::after {
+    margin: 20px 0; 
+}
+.whatwedo p {
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+    padding: 0 25px;
+}
+.card {
+    background: #ebebeb;
+    overflow: hidden;
+    border: none;
+}
+.card a {
+    text-decoration: none;
+}
+.card h1::after{
+   background-color: #666;
+   margin: 20px auto;
+   
+}
+.card:hover{
+    background: #71bf44;
+}
+.card:hover .whatwedo_icon i{
+   color: #71bf44;
+}
+.card:hover .whatwedo_link i{
+    color: #71bf44;
+}
+.card-body { 
+    border-radius: 10px;
+    padding: 150px 0  70px;
+}
+.whatwedo_icon {
+    width: 150px;
+    height: 150px;
+    background: #666;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    left: -39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.whatwedo_icon i{
+    font-size: 36px;
+    margin-top: 30px;
+    margin-left: 30px;
+    color: #ebebeb;
+}
+.whatwedo_link {
+    width: 80px;
+    height: 80px;
+    background: #666;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -20px;
+    right: -9px;
+    
+}
+.whatwedo_link i {
+    font-size: 24px;
+    color: #fff;
+}
+
