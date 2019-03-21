@@ -333,6 +333,9 @@ header span {
 .whatwedo {
     padding: 150px 0;
 }
+.whatwedo h1 {
+    color: #71bf44;
+}
 .whatwedo h1::after {
     margin: 20px 0; 
 }
@@ -340,7 +343,8 @@ header span {
     font-size: 14px;
     color: #666;
     font-weight: normal;
-    padding: 0 25px;
+    margin-bottom: 40px;
+   
 }
 .card {
     background: #ebebeb;
@@ -349,6 +353,9 @@ header span {
 }
 .card a {
     text-decoration: none;
+}
+.card p {
+     padding: 0 25px;
 }
 .card h1::after{
    background-color: #666;
@@ -403,4 +410,59 @@ header span {
     font-size: 24px;
     color: #fff;
 }
+.howitwork {
+    padding: 150px 0;
+    background: #333;
+}
+.howitwork h1 {
+    color: #71bf44;
+}
+.howitwork p{
+    font-size: 14px;
+    color: #e4e4e4;
+}
+.howitwork_iner{
+    width: 80%;
+    margin-top: 40px;
+    
+}
+.howitwork_iner ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+.howitwork_item{
+    width: 65px;
+    height: 65px;
+    border: 2px dashed #71bf44;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dashed_line::after{
+    content: '';
+    display: block;
+    width: 95px;
+    border: 1px dashed #71bf44;
+    position: absolute;
+    right: 0;
+}
 
+.howitwork_item span {
+    font-size: 30px;
+    color: #71bf44;
+}
+
+.howitwork_iner li h2{
+    font-size: 30px;
+    color: #71bf44;
+    margin-top: 32px;
+}
+.howitwork_iner .rocket {
+    background-color: #71bf44;
+}
+.howitwork_iner .howitwork_item i {
+    color: #222222;
+}
