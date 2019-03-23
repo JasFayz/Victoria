@@ -347,9 +347,15 @@ header span {
    
 }
 .card {
-    background: #ebebeb;
     overflow: hidden;
+    border-radius: 10px;
     border: none;
+    transition: all 0.3s 0 ease;
+    display: inline-block;
+    -webkit-transition: all 0.3s;
+}
+.card-body {
+    background: #ebebeb;
 }
 .card a {
     text-decoration: none;
@@ -362,13 +368,13 @@ header span {
    margin: 20px auto;
    
 }
-.card:hover{
+.card-body:hover{
     background: #71bf44;
 }
-.card:hover .whatwedo_icon i{
+.card-body:hover .whatwedo_icon i{
    color: #71bf44;
 }
-.card:hover .whatwedo_link i{
+.card-body:hover .whatwedo_link i{
     color: #71bf44;
 }
 .card-body { 
@@ -387,6 +393,7 @@ header span {
     justify-content: center;
     align-items: center;   
 }
+
 .whatwedo_icon i{
     font-size: 36px;
     margin-top: 30px;
@@ -422,39 +429,45 @@ header span {
     color: #e4e4e4;
 }
 .howitwork_iner{
-    width: 80%;
     margin-top: 40px;
-    
 }
 .howitwork_iner ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    padding-left: 15px;
+    padding: 0;
 }
 .howitwork_item{
     width: 65px;
     height: 65px;
     border: 2px dashed #71bf44;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
 }
 .dashed_line::after{
     content: '';
     display: block;
-    width: 95px;
+    width: 195px;
     border: 1px dashed #71bf44;
     position: absolute;
-    right: 0;
+    left: 100%;
+    top: 50%;
 }
 
 .howitwork_item span {
     font-size: 30px;
     color: #71bf44;
 }
-
+.howitwork_iner li{
+    overflow: hidden;
+}
 .howitwork_iner li h2{
     font-size: 30px;
     color: #71bf44;
@@ -465,4 +478,191 @@ header span {
 }
 .howitwork_iner .howitwork_item i {
     color: #222222;
+}
+.launch {
+    float: left;
+    width: 150px;
+}
+.howitwork_iner>ul{
+    float: left;
+    width: calc(100% - 150px);
+}
+.frowourblog {
+    padding: 150px 0;
+}
+
+.img_wrap{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.frowourblog h2{
+    font-size: 18px;
+    font-weight: bold;
+    color: #362f2d;
+    margin: 0;
+     margin-top: 35px;
+}
+.frowourblog span {
+    font-size: 12px;
+    color: #999;
+}
+.frowourblog p {
+    font-size: 12px;
+    color: #666666;
+    margin-top: 20px;
+}
+.img_wrap:hover .readmore{
+    display: block;
+}
+.readmore{
+    width: 190px;
+    height: 45px;
+    background: #71bf44;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    font-size: 12px;
+    text-align: center;
+    line-height: 40px;
+    display: none;
+}
+
+.purchase .container {
+    background-color: #ebebeb;
+    border: 1px solid #d0d0d0;
+    border-radius: 10px;
+    padding: 45px 20px;
+    display: flex;
+}
+
+.purchase  h2{
+    font-size: 24px;
+    color: #222;
+    font-weight: bold;
+    margin: 0;
+    display: inline-block;
+    text-transform: uppercase;
+
+}
+.purchase p{
+    font-size: 12px;
+    color: #666666;
+    margin: 0;
+     display: inline-block;
+}
+.Ourprofile {
+    padding: 150px 0;
+}
+.Ourprofile .navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    position: relative;
+}
+.Ourprofile .navbar ul li {
+    padding: 0 40px;
+    border-right: 1px solid #666;
+    position: relative;
+    text-align: center;
+}
+.Ourprofile .navbar ul li:last-child{
+    border: 0;
+}
+.Ourprofile .navbar ul li a {
+    text-decoration: none;
+    position: relative;
+    z-index: 222;
+    color: #666;
+}
+.Ourprofile .navbar ul li:hover .Ourprofile_link{
+    display: block;
+}
+.Ourprofile_link{
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #71bf44;
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translateX(-50%);
+}
+.Ourprofile h1 {
+    color: #71bf44;
+}
+.second_img img{
+    position: absolute;
+    bottom: 0;
+}
+.wathcvideo {
+    height: 400px;
+    background: #0f0f0f;
+    color: #fff;
+    text-align: center;
+    padding: 155px 0;
+}
+
+.wathcvideo i {
+    font-size: 72px;
+    cursor: pointer;
+}
+.wathcvideo h2 {
+    font-size: 30px;
+}
+.pricetable {
+    padding: 150px 0;    
+}
+.pricetable .card-body{
+    background: #222;
+    transition: all 0.5s;
+    z-index: 22;
+  
+}
+.pricetable .card-body:hover{
+    background: #71bf44;
+}
+.pricetable .card-body:hover {
+    background-color: #71bf44;
+}
+.pricetable .card-body:hover h1,
+.pricetable .card-body:hover h2{
+    color: #222;
+}
+.pricetable .card-body h1 {
+    color: #ccc;
+}
+.pricetable .card-body h2 {
+    color: #ccc;
+    font-size: 72px;
+}
+.card-info {
+    width: 90%;
+    background: #ebebeb;
+    margin: 0 auto;
+    margin-top: -10px;
+    border-radius: 10px;
+    padding: 10px 0;
+    padding-bottom: 30px;
+}
+.card-info ul {
+    list-style: none;
+}
+.card-info ul li{
+    margin-top: 40px;
+}
+.pricetable .card-info button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.pricetable .card-info .btn-dark{
+    background-color: #222;
+}
+.pricetable .card-info i {
+    margin-right: 10px;
 }
